@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary with free API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="app">
+      <main class="main">
+        <h1>Your <span>Dictionary</span></h1>
+
+        <form class="form">
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Type a word..."
+              name="word"
+              id="word-input"
+              autocomplete="off"
+              value=""
+            />
+          </div>
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="error"></div>
+
+        <div class="load" style="display: none">
+          <div class="letter-holder">
+            <div class="l-1 letter">L</div>
+            <div class="l-2 letter">o</div>
+            <div class="l-3 letter">a</div>
+            <div class="l-4 letter">d</div>
+            <div class="l-5 letter">i</div>
+            <div class="l-6 letter">n</div>
+            <div class="l-7 letter">g</div>
+            <div class="l-8 letter">.</div>
+            <div class="l-9 letter">.</div>
+            <div class="l-10 letter">.</div>
+          </div>
+        </div>
+
+        <div class="results">
+          
+        
+
+
+          <div class="results-info">
+            <div class="results-word"></div>
+
+            <div class="results-sound">
+              <img src="./assets/images/sounds.png" alt="" />
+            </div>
+          </div>
+
+          <div class="results-list"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+
+</html>
